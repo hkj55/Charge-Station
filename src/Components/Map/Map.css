@@ -1,0 +1,15 @@
+.map-container {    
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+    margin-left: auto;
+    margin-right: auto;
+    height: 90vh;
+}
+
+.map{
+    width: 80% !important;
+    height: 80% !important;
+    overflow: hidden !important;
+}

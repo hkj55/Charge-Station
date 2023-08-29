@@ -1,0 +1,24 @@
+.main-con{   
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+.inner-div{
+    margin-top: 5%;
+}
+
+.floating-div{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-icons{
+    size: 50px;
+}
+
+.map-container {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}

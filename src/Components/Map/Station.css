@@ -1,0 +1,31 @@
+.header{
+    background-color: var(--mainGreen);
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.des{    
+    font-size: medium;
+}
+
+.image{
+    height: 200px;
+}
+
+.checkIn{
+    font-size: small;
+}
+
+.actHeight{
+    height: 80px;
+}
+
+.smaller{
+    font-size: smaller;
+}

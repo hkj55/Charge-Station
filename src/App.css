@@ -1,38 +1,128 @@
-.App {
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+
+:root {
+    --yellow: linear-gradient(180deg, #F8D49A -146.42%, #FAD79D -46.42%);
+    --orange: #fca61f;
+    --mainGreen : #004d40;
+    --glass: rgba(255, 255, 255, 0.54);
+    --lightBlue:#b3e5fc;
+  }
+
+body {
+  /* fallback for old browsers */
+  background-color: white;
+}
+
+  .hide {
+    display: none;
+  }
+
+  .buttonSpan{
+    color: var(--mainGreen);
+    margin-left: 7px;
+    cursor: pointer;
+  }
+
+  
+.mandatory {
+  color: red;
+  font-weight: bold;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .center{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.circularButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  color: var(--mainGreen);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.centerText{  
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.test{
+    background-color: blueviolet;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.box{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 3px;
+}
+
+.actionBox{
+    border: 1px;
+    border-style: solid;
+    border-color: darkgray;
+    padding: 0px;
+    margin: 0px;
+}
+
+.underline{
+    border-bottom: 1px solid darkgray;
+    margin: 0px;
+    padding: 5px;
+}
+
+.gradient-background {
+  background: linear-gradient(230deg,deepskyblue,#306b3f,#58db7a);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.glass-effect {
+  backdrop-filter: blur(1px);
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.end-div{    
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: end;
 }
 
-.App-link {
-  color: #61dafb;
+.outer-div{
+  padding: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.white-background{
+  background-color: aliceblue;
+}
+
+.add{
+    z-index: 1000;
 }
